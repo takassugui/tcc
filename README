@@ -1,9 +1,11 @@
+O site pode ser acessado pela URL disponível na AWS: http://ec2-54-160-102-146.compute-1.amazonaws.com/tcc/login.php
+usuário: rodrigo@t18.com.br
+password: senha
+
 Instalação validada no XAMPP 5.6.14
 Apache 2.4
 PHP 7.4.6
 MySQL 5
 
 O arquivo da base de dados está contida no arquivo gymfit.sql.
-O acesso ao sistema se da pelo arquivo login.php
-
-
+O acesso ao sistema se da pelo arquivo login.php.
