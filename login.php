@@ -16,7 +16,12 @@
 				// Perform query
 				if ($result = mysqli_query($con, "SELECT * FROM usuario WHERE email = '".$email."' AND senha = '".$senha."'")) {
 					if(mysqli_num_rows($result) > 0){
-						header("Location: list_instrutor.php");
+						while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+							if($row['cargo'] == 'atendente')
+								header("Location: list_instrutor.php");
+							elseif($row['cargo'] == 'fisioterapeuta')
+								header("Location: list_avaliacoes.php");
+						}
 					}
 					else{
 						$msg = 'Login inválido.';
